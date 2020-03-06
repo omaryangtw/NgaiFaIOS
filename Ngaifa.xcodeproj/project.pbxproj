@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,110 @@
 		5F0FD7FA24111866005E806D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD7F824111866005E806D /* Main.storyboard */; };
 		5F0FD7FC24111867005E806D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD7FB24111867005E806D /* Assets.xcassets */; };
 		5F0FD7FF24111867005E806D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD7FD24111867005E806D /* LaunchScreen.storyboard */; };
+		5F0FD808241118C2005E806D /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0FD807241118C2005E806D /* KeyboardKit */; };
+		5F0FD814241118DB005E806D /* HakkaKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5F0FD80D241118DB005E806D /* HakkaKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5F0FD838241119C8005E806D /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD81A241119C8005E806D /* Assets.swift */; };
+		5F0FD839241119C8005E806D /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD81A241119C8005E806D /* Assets.swift */; };
+		5F0FD83A241119C8005E806D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD81B241119C8005E806D /* Colors.xcassets */; };
+		5F0FD83B241119C8005E806D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD81B241119C8005E806D /* Colors.xcassets */; };
+		5F0FD83C241119C8005E806D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD81C241119C8005E806D /* Images.xcassets */; };
+		5F0FD83D241119C8005E806D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD81C241119C8005E806D /* Images.xcassets */; };
+		5F0FD83E241119C8005E806D /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD81E241119C8005E806D /* info.png */; };
+		5F0FD83F241119C8005E806D /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD81E241119C8005E806D /* info.png */; };
+		5F0FD840241119C8005E806D /* rss.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD81F241119C8005E806D /* rss.png */; };
+		5F0FD841241119C8005E806D /* rss.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD81F241119C8005E806D /* rss.png */; };
+		5F0FD842241119C8005E806D /* warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD820241119C8005E806D /* warning.png */; };
+		5F0FD843241119C8005E806D /* warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD820241119C8005E806D /* warning.png */; };
+		5F0FD844241119C8005E806D /* delicious.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD821241119C8005E806D /* delicious.png */; };
+		5F0FD845241119C8005E806D /* delicious.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD821241119C8005E806D /* delicious.png */; };
+		5F0FD846241119C8005E806D /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD822241119C8005E806D /* note.png */; };
+		5F0FD847241119C8005E806D /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD822241119C8005E806D /* note.png */; };
+		5F0FD848241119C8005E806D /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD823241119C8005E806D /* download.png */; };
+		5F0FD849241119C8005E806D /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD823241119C8005E806D /* download.png */; };
+		5F0FD84A241119C9005E806D /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD824241119C8005E806D /* mail.png */; };
+		5F0FD84B241119C9005E806D /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD824241119C8005E806D /* mail.png */; };
+		5F0FD84C241119C9005E806D /* zoom.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD825241119C8005E806D /* zoom.png */; };
+		5F0FD84D241119C9005E806D /* zoom.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD825241119C8005E806D /* zoom.png */; };
+		5F0FD84E241119C9005E806D /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD826241119C8005E806D /* bubble.png */; };
+		5F0FD84F241119C9005E806D /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD826241119C8005E806D /* bubble.png */; };
+		5F0FD850241119C9005E806D /* label.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD827241119C8005E806D /* label.png */; };
+		5F0FD851241119C9005E806D /* label.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD827241119C8005E806D /* label.png */; };
+		5F0FD852241119C9005E806D /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD828241119C8005E806D /* cancel.png */; };
+		5F0FD853241119C9005E806D /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD828241119C8005E806D /* cancel.png */; };
+		5F0FD854241119C9005E806D /* mac.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD829241119C8005E806D /* mac.png */; };
+		5F0FD855241119C9005E806D /* mac.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD829241119C8005E806D /* mac.png */; };
+		5F0FD856241119C9005E806D /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD82A241119C8005E806D /* search.png */; };
+		5F0FD857241119C9005E806D /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD82A241119C8005E806D /* search.png */; };
+		5F0FD858241119C9005E806D /* monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD82B241119C8005E806D /* monitor.png */; };
+		5F0FD859241119C9005E806D /* monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD82B241119C8005E806D /* monitor.png */; };
+		5F0FD85A241119C9005E806D /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD82C241119C8005E806D /* help.png */; };
+		5F0FD85B241119C9005E806D /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD82C241119C8005E806D /* help.png */; };
+		5F0FD85C241119C9005E806D /* globe.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD82D241119C8005E806D /* globe.png */; };
+		5F0FD85D241119C9005E806D /* globe.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD82D241119C8005E806D /* globe.png */; };
+		5F0FD85E241119C9005E806D /* color.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD82E241119C8005E806D /* color.png */; };
+		5F0FD85F241119C9005E806D /* color.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD82E241119C8005E806D /* color.png */; };
+		5F0FD860241119C9005E806D /* base.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD82F241119C8005E806D /* base.png */; };
+		5F0FD861241119C9005E806D /* base.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD82F241119C8005E806D /* base.png */; };
+		5F0FD862241119C9005E806D /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD830241119C8005E806D /* video.png */; };
+		5F0FD863241119C9005E806D /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD830241119C8005E806D /* video.png */; };
+		5F0FD864241119C9005E806D /* idea.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD831241119C8005E806D /* idea.png */; };
+		5F0FD865241119C9005E806D /* idea.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD831241119C8005E806D /* idea.png */; };
+		5F0FD866241119C9005E806D /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD832241119C8005E806D /* edit.png */; };
+		5F0FD867241119C9005E806D /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD832241119C8005E806D /* edit.png */; };
+		5F0FD868241119C9005E806D /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD833241119C8005E806D /* trash.png */; };
+		5F0FD869241119C9005E806D /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD833241119C8005E806D /* trash.png */; };
+		5F0FD86A241119C9005E806D /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD834241119C8005E806D /* box.png */; };
+		5F0FD86B241119C9005E806D /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD834241119C8005E806D /* box.png */; };
+		5F0FD86C241119C9005E806D /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD835241119C8005E806D /* favorite.png */; };
+		5F0FD86D241119C9005E806D /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD835241119C8005E806D /* favorite.png */; };
+		5F0FD86E241119C9005E806D /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD836241119C8005E806D /* refresh.png */; };
+		5F0FD86F241119C9005E806D /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD836241119C8005E806D /* refresh.png */; };
+		5F0FD870241119C9005E806D /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD837241119C8005E806D /* image.png */; };
+		5F0FD871241119C9005E806D /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD837241119C8005E806D /* image.png */; };
+		5F0FD89324111AF7005E806D /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0FD89224111AF7005E806D /* KeyboardKit */; };
+		5F0FD8A624111EB7005E806D /* DemoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD89524111EB6005E806D /* DemoButton.swift */; };
+		5F0FD8A724111EB7005E806D /* DemoButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD89624111EB6005E806D /* DemoButton.xib */; };
+		5F0FD8A824111EB7005E806D /* DemoAutocompleteLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD89724111EB6005E806D /* DemoAutocompleteLabel.swift */; };
+		5F0FD8A924111EB7005E806D /* NumericKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD89924111EB6005E806D /* NumericKeyboard.swift */; };
+		5F0FD8AA24111EB7005E806D /* AlphabeticKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD89A24111EB6005E806D /* AlphabeticKeyboard.swift */; };
+		5F0FD8AB24111EB7005E806D /* SymbolicKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD89B24111EB6005E806D /* SymbolicKeyboard.swift */; };
+		5F0FD8AC24111EB7005E806D /* ImageKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD89C24111EB6005E806D /* ImageKeyboard.swift */; };
+		5F0FD8AD24111EB7005E806D /* DemoKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD89D24111EB6005E806D /* DemoKeyboard.swift */; };
+		5F0FD8AE24111EB7005E806D /* EmojiKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD89E24111EB6005E806D /* EmojiKeyboard.swift */; };
+		5F0FD8AF24111EB7005E806D /* DemoKeyboardActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD89F24111EB6005E806D /* DemoKeyboardActionHandler.swift */; };
+		5F0FD8B024111EB7005E806D /* KeyboardViewController+Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD8A024111EB6005E806D /* KeyboardViewController+Buttons.swift */; };
+		5F0FD8B124111EB7005E806D /* KeyboardViewController+Autocomplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD8A124111EB6005E806D /* KeyboardViewController+Autocomplete.swift */; };
+		5F0FD8B224111EB7005E806D /* KeyboardViewController+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD8A224111EB6005E806D /* KeyboardViewController+Setup.swift */; };
+		5F0FD8B324111EB7005E806D /* DemoAutocompleteSuggestionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD8A424111EB6005E806D /* DemoAutocompleteSuggestionProvider.swift */; };
+		5F0FD8B424111EB7005E806D /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD8A524111EB7005E806D /* KeyboardViewController.swift */; };
+		5F0FD8B724122779005E806D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0FD8B624122779005E806D /* Realm */; };
+		5F0FD8B924122779005E806D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0FD8B824122779005E806D /* RealmSwift */; };
+		5F0FD8BB24122A29005E806D /* CandidateLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD8BA24122A29005E806D /* CandidateLookup.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F0FD812241118DB005E806D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F0FD7E724111866005E806D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F0FD80C241118DB005E806D;
+			remoteInfo = HakkaKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F0FD818241118DB005E806D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5F0FD814241118DB005E806D /* HakkaKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5F0FD7EF24111866005E806D /* Ngaifa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ngaifa.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +127,53 @@
 		5F0FD7FB24111867005E806D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F0FD7FE24111867005E806D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F0FD80024111867005E806D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F0FD80D241118DB005E806D /* HakkaKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HakkaKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F0FD811241118DB005E806D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F0FD81A241119C8005E806D /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		5F0FD81B241119C8005E806D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		5F0FD81C241119C8005E806D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5F0FD81E241119C8005E806D /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		5F0FD81F241119C8005E806D /* rss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rss.png; sourceTree = "<group>"; };
+		5F0FD820241119C8005E806D /* warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warning.png; sourceTree = "<group>"; };
+		5F0FD821241119C8005E806D /* delicious.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delicious.png; sourceTree = "<group>"; };
+		5F0FD822241119C8005E806D /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
+		5F0FD823241119C8005E806D /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
+		5F0FD824241119C8005E806D /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
+		5F0FD825241119C8005E806D /* zoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoom.png; sourceTree = "<group>"; };
+		5F0FD826241119C8005E806D /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
+		5F0FD827241119C8005E806D /* label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label.png; sourceTree = "<group>"; };
+		5F0FD828241119C8005E806D /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		5F0FD829241119C8005E806D /* mac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mac.png; sourceTree = "<group>"; };
+		5F0FD82A241119C8005E806D /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		5F0FD82B241119C8005E806D /* monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monitor.png; sourceTree = "<group>"; };
+		5F0FD82C241119C8005E806D /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		5F0FD82D241119C8005E806D /* globe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe.png; sourceTree = "<group>"; };
+		5F0FD82E241119C8005E806D /* color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color.png; sourceTree = "<group>"; };
+		5F0FD82F241119C8005E806D /* base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = base.png; sourceTree = "<group>"; };
+		5F0FD830241119C8005E806D /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video.png; sourceTree = "<group>"; };
+		5F0FD831241119C8005E806D /* idea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = idea.png; sourceTree = "<group>"; };
+		5F0FD832241119C8005E806D /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		5F0FD833241119C8005E806D /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash.png; sourceTree = "<group>"; };
+		5F0FD834241119C8005E806D /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
+		5F0FD835241119C8005E806D /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
+		5F0FD836241119C8005E806D /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		5F0FD837241119C8005E806D /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		5F0FD89524111EB6005E806D /* DemoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoButton.swift; sourceTree = "<group>"; };
+		5F0FD89624111EB6005E806D /* DemoButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoButton.xib; sourceTree = "<group>"; };
+		5F0FD89724111EB6005E806D /* DemoAutocompleteLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoAutocompleteLabel.swift; sourceTree = "<group>"; };
+		5F0FD89924111EB6005E806D /* NumericKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericKeyboard.swift; sourceTree = "<group>"; };
+		5F0FD89A24111EB6005E806D /* AlphabeticKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabeticKeyboard.swift; sourceTree = "<group>"; };
+		5F0FD89B24111EB6005E806D /* SymbolicKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolicKeyboard.swift; sourceTree = "<group>"; };
+		5F0FD89C24111EB6005E806D /* ImageKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageKeyboard.swift; sourceTree = "<group>"; };
+		5F0FD89D24111EB6005E806D /* DemoKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoKeyboard.swift; sourceTree = "<group>"; };
+		5F0FD89E24111EB6005E806D /* EmojiKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiKeyboard.swift; sourceTree = "<group>"; };
+		5F0FD89F24111EB6005E806D /* DemoKeyboardActionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoKeyboardActionHandler.swift; sourceTree = "<group>"; };
+		5F0FD8A024111EB6005E806D /* KeyboardViewController+Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyboardViewController+Buttons.swift"; sourceTree = "<group>"; };
+		5F0FD8A124111EB6005E806D /* KeyboardViewController+Autocomplete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyboardViewController+Autocomplete.swift"; sourceTree = "<group>"; };
+		5F0FD8A224111EB6005E806D /* KeyboardViewController+Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyboardViewController+Setup.swift"; sourceTree = "<group>"; };
+		5F0FD8A424111EB6005E806D /* DemoAutocompleteSuggestionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoAutocompleteSuggestionProvider.swift; sourceTree = "<group>"; };
+		5F0FD8A524111EB7005E806D /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		5F0FD8BA24122A29005E806D /* CandidateLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateLookup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +181,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0FD8B924122779005E806D /* RealmSwift in Frameworks */,
+				5F0FD8B724122779005E806D /* Realm in Frameworks */,
+				5F0FD808241118C2005E806D /* KeyboardKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F0FD80A241118DB005E806D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0FD89324111AF7005E806D /* KeyboardKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +202,9 @@
 			isa = PBXGroup;
 			children = (
 				5F0FD7F124111866005E806D /* Ngaifa */,
+				5F0FD80E241118DB005E806D /* HakkaKeyboard */,
 				5F0FD7F024111866005E806D /* Products */,
+				5F0FD89124111AF7005E806D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				5F0FD7EF24111866005E806D /* Ngaifa.app */,
+				5F0FD80D241118DB005E806D /* HakkaKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +220,7 @@
 		5F0FD7F124111866005E806D /* Ngaifa */ = {
 			isa = PBXGroup;
 			children = (
+				5F0FD819241119C8005E806D /* Assets */,
 				5F0FD7F224111866005E806D /* AppDelegate.swift */,
 				5F0FD7F424111866005E806D /* SceneDelegate.swift */,
 				5F0FD7F624111866005E806D /* ViewController.swift */,
@@ -65,6 +230,105 @@
 				5F0FD80024111867005E806D /* Info.plist */,
 			);
 			path = Ngaifa;
+			sourceTree = "<group>";
+		};
+		5F0FD80E241118DB005E806D /* HakkaKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5F0FD8A324111EB6005E806D /* Autocomplete */,
+				5F0FD89424111EB6005E806D /* Buttons */,
+				5F0FD89F24111EB6005E806D /* DemoKeyboardActionHandler.swift */,
+				5F0FD89824111EB6005E806D /* Keyboards */,
+				5F0FD8A524111EB7005E806D /* KeyboardViewController.swift */,
+				5F0FD8A124111EB6005E806D /* KeyboardViewController+Autocomplete.swift */,
+				5F0FD8A024111EB6005E806D /* KeyboardViewController+Buttons.swift */,
+				5F0FD8A224111EB6005E806D /* KeyboardViewController+Setup.swift */,
+				5F0FD811241118DB005E806D /* Info.plist */,
+			);
+			path = HakkaKeyboard;
+			sourceTree = "<group>";
+		};
+		5F0FD819241119C8005E806D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5F0FD81A241119C8005E806D /* Assets.swift */,
+				5F0FD81B241119C8005E806D /* Colors.xcassets */,
+				5F0FD81C241119C8005E806D /* Images.xcassets */,
+				5F0FD81D241119C8005E806D /* Cartoon Icons */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		5F0FD81D241119C8005E806D /* Cartoon Icons */ = {
+			isa = PBXGroup;
+			children = (
+				5F0FD81E241119C8005E806D /* info.png */,
+				5F0FD81F241119C8005E806D /* rss.png */,
+				5F0FD820241119C8005E806D /* warning.png */,
+				5F0FD821241119C8005E806D /* delicious.png */,
+				5F0FD822241119C8005E806D /* note.png */,
+				5F0FD823241119C8005E806D /* download.png */,
+				5F0FD824241119C8005E806D /* mail.png */,
+				5F0FD825241119C8005E806D /* zoom.png */,
+				5F0FD826241119C8005E806D /* bubble.png */,
+				5F0FD827241119C8005E806D /* label.png */,
+				5F0FD828241119C8005E806D /* cancel.png */,
+				5F0FD829241119C8005E806D /* mac.png */,
+				5F0FD82A241119C8005E806D /* search.png */,
+				5F0FD82B241119C8005E806D /* monitor.png */,
+				5F0FD82C241119C8005E806D /* help.png */,
+				5F0FD82D241119C8005E806D /* globe.png */,
+				5F0FD82E241119C8005E806D /* color.png */,
+				5F0FD82F241119C8005E806D /* base.png */,
+				5F0FD830241119C8005E806D /* video.png */,
+				5F0FD831241119C8005E806D /* idea.png */,
+				5F0FD832241119C8005E806D /* edit.png */,
+				5F0FD833241119C8005E806D /* trash.png */,
+				5F0FD834241119C8005E806D /* box.png */,
+				5F0FD835241119C8005E806D /* favorite.png */,
+				5F0FD836241119C8005E806D /* refresh.png */,
+				5F0FD837241119C8005E806D /* image.png */,
+			);
+			path = "Cartoon Icons";
+			sourceTree = "<group>";
+		};
+		5F0FD89124111AF7005E806D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F0FD89424111EB6005E806D /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				5F0FD89524111EB6005E806D /* DemoButton.swift */,
+				5F0FD89624111EB6005E806D /* DemoButton.xib */,
+				5F0FD89724111EB6005E806D /* DemoAutocompleteLabel.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		5F0FD89824111EB6005E806D /* Keyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5F0FD89924111EB6005E806D /* NumericKeyboard.swift */,
+				5F0FD89A24111EB6005E806D /* AlphabeticKeyboard.swift */,
+				5F0FD89B24111EB6005E806D /* SymbolicKeyboard.swift */,
+				5F0FD89C24111EB6005E806D /* ImageKeyboard.swift */,
+				5F0FD89D24111EB6005E806D /* DemoKeyboard.swift */,
+				5F0FD89E24111EB6005E806D /* EmojiKeyboard.swift */,
+			);
+			path = Keyboards;
+			sourceTree = "<group>";
+		};
+		5F0FD8A324111EB6005E806D /* Autocomplete */ = {
+			isa = PBXGroup;
+			children = (
+				5F0FD8A424111EB6005E806D /* DemoAutocompleteSuggestionProvider.swift */,
+				5F0FD8BA24122A29005E806D /* CandidateLookup.swift */,
+			);
+			path = Autocomplete;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +341,42 @@
 				5F0FD7EB24111866005E806D /* Sources */,
 				5F0FD7EC24111866005E806D /* Frameworks */,
 				5F0FD7ED24111866005E806D /* Resources */,
+				5F0FD818241118DB005E806D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F0FD813241118DB005E806D /* PBXTargetDependency */,
+			);
+			name = Ngaifa;
+			packageProductDependencies = (
+				5F0FD807241118C2005E806D /* KeyboardKit */,
+				5F0FD8B624122779005E806D /* Realm */,
+				5F0FD8B824122779005E806D /* RealmSwift */,
+			);
+			productName = Ngaifa;
+			productReference = 5F0FD7EF24111866005E806D /* Ngaifa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F0FD80C241118DB005E806D /* HakkaKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F0FD815241118DB005E806D /* Build configuration list for PBXNativeTarget "HakkaKeyboard" */;
+			buildPhases = (
+				5F0FD809241118DB005E806D /* Sources */,
+				5F0FD80A241118DB005E806D /* Frameworks */,
+				5F0FD80B241118DB005E806D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Ngaifa;
-			productName = Ngaifa;
-			productReference = 5F0FD7EF24111866005E806D /* Ngaifa.app */;
-			productType = "com.apple.product-type.application";
+			name = HakkaKeyboard;
+			packageProductDependencies = (
+				5F0FD89224111AF7005E806D /* KeyboardKit */,
+			);
+			productName = HakkaKeyboard;
+			productReference = 5F0FD80D241118DB005E806D /* HakkaKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +391,9 @@
 					5F0FD7EE24111866005E806D = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
+					5F0FD80C241118DB005E806D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 5F0FD7EA24111866005E806D /* Build configuration list for PBXProject "Ngaifa" */;
@@ -111,11 +405,16 @@
 				Base,
 			);
 			mainGroup = 5F0FD7E624111866005E806D;
+			packageReferences = (
+				5F0FD806241118C2005E806D /* XCRemoteSwiftPackageReference "KeyboardKit" */,
+				5F0FD8B524122779005E806D /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 5F0FD7F024111866005E806D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5F0FD7EE24111866005E806D /* Ngaifa */,
+				5F0FD80C241118DB005E806D /* HakkaKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -126,8 +425,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F0FD7FF24111867005E806D /* LaunchScreen.storyboard in Resources */,
+				5F0FD856241119C9005E806D /* search.png in Resources */,
+				5F0FD846241119C8005E806D /* note.png in Resources */,
+				5F0FD866241119C9005E806D /* edit.png in Resources */,
+				5F0FD84A241119C9005E806D /* mail.png in Resources */,
+				5F0FD852241119C9005E806D /* cancel.png in Resources */,
+				5F0FD844241119C8005E806D /* delicious.png in Resources */,
+				5F0FD864241119C9005E806D /* idea.png in Resources */,
+				5F0FD868241119C9005E806D /* trash.png in Resources */,
+				5F0FD854241119C9005E806D /* mac.png in Resources */,
+				5F0FD848241119C8005E806D /* download.png in Resources */,
+				5F0FD83C241119C8005E806D /* Images.xcassets in Resources */,
+				5F0FD85E241119C9005E806D /* color.png in Resources */,
+				5F0FD86C241119C9005E806D /* favorite.png in Resources */,
+				5F0FD83A241119C8005E806D /* Colors.xcassets in Resources */,
+				5F0FD858241119C9005E806D /* monitor.png in Resources */,
+				5F0FD84E241119C9005E806D /* bubble.png in Resources */,
+				5F0FD840241119C8005E806D /* rss.png in Resources */,
+				5F0FD84C241119C9005E806D /* zoom.png in Resources */,
+				5F0FD86E241119C9005E806D /* refresh.png in Resources */,
+				5F0FD842241119C8005E806D /* warning.png in Resources */,
+				5F0FD86A241119C9005E806D /* box.png in Resources */,
+				5F0FD85C241119C9005E806D /* globe.png in Resources */,
+				5F0FD850241119C9005E806D /* label.png in Resources */,
+				5F0FD85A241119C9005E806D /* help.png in Resources */,
+				5F0FD862241119C9005E806D /* video.png in Resources */,
 				5F0FD7FC24111867005E806D /* Assets.xcassets in Resources */,
 				5F0FD7FA24111866005E806D /* Main.storyboard in Resources */,
+				5F0FD860241119C9005E806D /* base.png in Resources */,
+				5F0FD870241119C9005E806D /* image.png in Resources */,
+				5F0FD83E241119C8005E806D /* info.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F0FD80B241118DB005E806D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0FD865241119C9005E806D /* idea.png in Resources */,
+				5F0FD843241119C8005E806D /* warning.png in Resources */,
+				5F0FD845241119C8005E806D /* delicious.png in Resources */,
+				5F0FD84B241119C9005E806D /* mail.png in Resources */,
+				5F0FD85D241119C9005E806D /* globe.png in Resources */,
+				5F0FD855241119C9005E806D /* mac.png in Resources */,
+				5F0FD83B241119C8005E806D /* Colors.xcassets in Resources */,
+				5F0FD861241119C9005E806D /* base.png in Resources */,
+				5F0FD83D241119C8005E806D /* Images.xcassets in Resources */,
+				5F0FD867241119C9005E806D /* edit.png in Resources */,
+				5F0FD859241119C9005E806D /* monitor.png in Resources */,
+				5F0FD8A724111EB7005E806D /* DemoButton.xib in Resources */,
+				5F0FD871241119C9005E806D /* image.png in Resources */,
+				5F0FD841241119C8005E806D /* rss.png in Resources */,
+				5F0FD84D241119C9005E806D /* zoom.png in Resources */,
+				5F0FD85F241119C9005E806D /* color.png in Resources */,
+				5F0FD869241119C9005E806D /* trash.png in Resources */,
+				5F0FD83F241119C8005E806D /* info.png in Resources */,
+				5F0FD853241119C9005E806D /* cancel.png in Resources */,
+				5F0FD85B241119C9005E806D /* help.png in Resources */,
+				5F0FD857241119C9005E806D /* search.png in Resources */,
+				5F0FD851241119C9005E806D /* label.png in Resources */,
+				5F0FD847241119C8005E806D /* note.png in Resources */,
+				5F0FD84F241119C9005E806D /* bubble.png in Resources */,
+				5F0FD86B241119C9005E806D /* box.png in Resources */,
+				5F0FD86D241119C9005E806D /* favorite.png in Resources */,
+				5F0FD863241119C9005E806D /* video.png in Resources */,
+				5F0FD86F241119C9005E806D /* refresh.png in Resources */,
+				5F0FD849241119C8005E806D /* download.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,11 +503,43 @@
 			files = (
 				5F0FD7F724111866005E806D /* ViewController.swift in Sources */,
 				5F0FD7F324111866005E806D /* AppDelegate.swift in Sources */,
+				5F0FD838241119C8005E806D /* Assets.swift in Sources */,
 				5F0FD7F524111866005E806D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5F0FD809241118DB005E806D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0FD8AF24111EB7005E806D /* DemoKeyboardActionHandler.swift in Sources */,
+				5F0FD8B424111EB7005E806D /* KeyboardViewController.swift in Sources */,
+				5F0FD8AA24111EB7005E806D /* AlphabeticKeyboard.swift in Sources */,
+				5F0FD8A924111EB7005E806D /* NumericKeyboard.swift in Sources */,
+				5F0FD8B324111EB7005E806D /* DemoAutocompleteSuggestionProvider.swift in Sources */,
+				5F0FD8A624111EB7005E806D /* DemoButton.swift in Sources */,
+				5F0FD8AD24111EB7005E806D /* DemoKeyboard.swift in Sources */,
+				5F0FD8BB24122A29005E806D /* CandidateLookup.swift in Sources */,
+				5F0FD8AC24111EB7005E806D /* ImageKeyboard.swift in Sources */,
+				5F0FD8B024111EB7005E806D /* KeyboardViewController+Buttons.swift in Sources */,
+				5F0FD8B224111EB7005E806D /* KeyboardViewController+Setup.swift in Sources */,
+				5F0FD8A824111EB7005E806D /* DemoAutocompleteLabel.swift in Sources */,
+				5F0FD8AB24111EB7005E806D /* SymbolicKeyboard.swift in Sources */,
+				5F0FD8B124111EB7005E806D /* KeyboardViewController+Autocomplete.swift in Sources */,
+				5F0FD839241119C8005E806D /* Assets.swift in Sources */,
+				5F0FD8AE24111EB7005E806D /* EmojiKeyboard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F0FD813241118DB005E806D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F0FD80C241118DB005E806D /* HakkaKeyboard */;
+			targetProxy = 5F0FD812241118DB005E806D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5F0FD7F824111866005E806D /* Main.storyboard */ = {
@@ -283,6 +678,7 @@
 		5F0FD80424111867005E806D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Ngaifa/Info.plist;
@@ -300,6 +696,7 @@
 		5F0FD80524111867005E806D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Ngaifa/Info.plist;
@@ -309,6 +706,42 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Omar.Ngaifa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5F0FD816241118DB005E806D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HakkaKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Omar.Ngaifa.HakkaKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F0FD817241118DB005E806D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HakkaKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Omar.Ngaifa.HakkaKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -335,7 +768,58 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5F0FD815241118DB005E806D /* Build configuration list for PBXNativeTarget "HakkaKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F0FD816241118DB005E806D /* Debug */,
+				5F0FD817241118DB005E806D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F0FD806241118C2005E806D /* XCRemoteSwiftPackageReference "KeyboardKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielsaidi/KeyboardKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.2;
+			};
+		};
+		5F0FD8B524122779005E806D /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5F0FD807241118C2005E806D /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F0FD806241118C2005E806D /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+		5F0FD89224111AF7005E806D /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F0FD806241118C2005E806D /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+		5F0FD8B624122779005E806D /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F0FD8B524122779005E806D /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		5F0FD8B824122779005E806D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F0FD8B524122779005E806D /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F0FD7E724111866005E806D /* Project object */;
 }

@@ -8,13 +8,13 @@
 
 import UIKit
 
+import UIKit
+
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var textView: UITextView? {
+        didSet { textView?.contentInset = UIEdgeInsets(top: 0, left: -4, bottom: 0, right: 0) }
     }
-
-
 }
+
 

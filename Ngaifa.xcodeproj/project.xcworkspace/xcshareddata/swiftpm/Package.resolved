@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "KeyboardKit",
+        "repositoryURL": "https://github.com/danielsaidi/KeyboardKit.git",
+        "state": {
+          "branch": null,
+          "revision": "159bb85c250974f5f0a23911279bd1228d6186c1",
+          "version": "2.6.2"
+        }
+      },
+      {
+        "package": "Mockery",
+        "repositoryURL": "https://github.com/danielsaidi/Mockery.git",
+        "state": {
+          "branch": null,
+          "revision": "915f39f7bc02b9c3e9f4edc0b3f6a354f2b71462",
+          "version": "0.3.1"
+        }
+      },
+      {
+        "package": "Nimble",
+        "repositoryURL": "https://github.com/Quick/Nimble.git",
+        "state": {
+          "branch": null,
+          "revision": "f8657642dfdec9973efc79cc68bcef43a653a2bc",
+          "version": "8.0.2"
+        }
+      },
+      {
+        "package": "Quick",
+        "repositoryURL": "https://github.com/Quick/Quick.git",
+        "state": {
+          "branch": null,
+          "revision": "33682c2f6230c60614861dfc61df267e11a1602f",
+          "version": "2.2.0"
+        }
+      },
+      {
+        "package": "Realm",
+        "repositoryURL": "https://github.com/realm/realm-cocoa",
+        "state": {
+          "branch": null,
+          "revision": "913d59c6522e3007c7cbac3a8e9775abf72c054c",
+          "version": "4.3.2"
+        }
+      },
+      {
+        "package": "RealmCore",
+        "repositoryURL": "https://github.com/realm/realm-core",
+        "state": {
+          "branch": null,
+          "revision": "35662ff940e340bf630ad1d1d88acfc7af18bee6",
+          "version": "5.23.8"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
