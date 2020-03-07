@@ -92,6 +92,12 @@
 		5F0FD8B724122779005E806D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0FD8B624122779005E806D /* Realm */; };
 		5F0FD8B924122779005E806D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0FD8B824122779005E806D /* RealmSwift */; };
 		5F0FD8BB24122A29005E806D /* CandidateLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD8BA24122A29005E806D /* CandidateLookup.swift */; };
+		5F0FD8C224123972005E806D /* containsNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD8C124123972005E806D /* containsNumbers.swift */; };
+		5F0FD8C424123B12005E806D /* RealmDatabaseLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD8C324123B12005E806D /* RealmDatabaseLoader.swift */; };
+		5F0FD8C624123BA1005E806D /* ImeDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0FD8C524123BA1005E806D /* ImeDict.swift */; };
+		5F0FD8C8241245BD005E806D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0FD8C7241245BD005E806D /* Realm */; };
+		5F0FD8CA241245BD005E806D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0FD8C9241245BD005E806D /* RealmSwift */; };
+		5F0FD8D024132E28005E806D /* ime_dict_8.realm in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD8CF24132E28005E806D /* ime_dict_8.realm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +180,10 @@
 		5F0FD8A424111EB6005E806D /* DemoAutocompleteSuggestionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoAutocompleteSuggestionProvider.swift; sourceTree = "<group>"; };
 		5F0FD8A524111EB7005E806D /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		5F0FD8BA24122A29005E806D /* CandidateLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateLookup.swift; sourceTree = "<group>"; };
+		5F0FD8C124123972005E806D /* containsNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = containsNumbers.swift; sourceTree = "<group>"; };
+		5F0FD8C324123B12005E806D /* RealmDatabaseLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatabaseLoader.swift; sourceTree = "<group>"; };
+		5F0FD8C524123BA1005E806D /* ImeDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImeDict.swift; sourceTree = "<group>"; };
+		5F0FD8CF24132E28005E806D /* ime_dict_8.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ime_dict_8.realm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +201,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0FD8CA241245BD005E806D /* RealmSwift in Frameworks */,
+				5F0FD8C8241245BD005E806D /* Realm in Frameworks */,
 				5F0FD89324111AF7005E806D /* KeyboardKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +247,7 @@
 		5F0FD80E241118DB005E806D /* HakkaKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				5F0FD8BE24123859005E806D /* Utils */,
 				5F0FD8A324111EB6005E806D /* Autocomplete */,
 				5F0FD89424111EB6005E806D /* Buttons */,
 				5F0FD89F24111EB6005E806D /* DemoKeyboardActionHandler.swift */,
@@ -251,6 +264,7 @@
 		5F0FD819241119C8005E806D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				5F0FD8CF24132E28005E806D /* ime_dict_8.realm */,
 				5F0FD81A241119C8005E806D /* Assets.swift */,
 				5F0FD81B241119C8005E806D /* Colors.xcassets */,
 				5F0FD81C241119C8005E806D /* Images.xcassets */,
@@ -331,6 +345,16 @@
 			path = Autocomplete;
 			sourceTree = "<group>";
 		};
+		5F0FD8BE24123859005E806D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5F0FD8C124123972005E806D /* containsNumbers.swift */,
+				5F0FD8C324123B12005E806D /* RealmDatabaseLoader.swift */,
+				5F0FD8C524123BA1005E806D /* ImeDict.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -373,6 +397,8 @@
 			name = HakkaKeyboard;
 			packageProductDependencies = (
 				5F0FD89224111AF7005E806D /* KeyboardKit */,
+				5F0FD8C7241245BD005E806D /* Realm */,
+				5F0FD8C9241245BD005E806D /* RealmSwift */,
 			);
 			productName = HakkaKeyboard;
 			productReference = 5F0FD80D241118DB005E806D /* HakkaKeyboard.appex */;
@@ -472,6 +498,7 @@
 				5F0FD861241119C9005E806D /* base.png in Resources */,
 				5F0FD83D241119C8005E806D /* Images.xcassets in Resources */,
 				5F0FD867241119C9005E806D /* edit.png in Resources */,
+				5F0FD8D024132E28005E806D /* ime_dict_8.realm in Resources */,
 				5F0FD859241119C9005E806D /* monitor.png in Resources */,
 				5F0FD8A724111EB7005E806D /* DemoButton.xib in Resources */,
 				5F0FD871241119C9005E806D /* image.png in Resources */,
@@ -512,7 +539,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0FD8C224123972005E806D /* containsNumbers.swift in Sources */,
 				5F0FD8AF24111EB7005E806D /* DemoKeyboardActionHandler.swift in Sources */,
+				5F0FD8C624123BA1005E806D /* ImeDict.swift in Sources */,
 				5F0FD8B424111EB7005E806D /* KeyboardViewController.swift in Sources */,
 				5F0FD8AA24111EB7005E806D /* AlphabeticKeyboard.swift in Sources */,
 				5F0FD8A924111EB7005E806D /* NumericKeyboard.swift in Sources */,
@@ -522,6 +551,7 @@
 				5F0FD8BB24122A29005E806D /* CandidateLookup.swift in Sources */,
 				5F0FD8AC24111EB7005E806D /* ImageKeyboard.swift in Sources */,
 				5F0FD8B024111EB7005E806D /* KeyboardViewController+Buttons.swift in Sources */,
+				5F0FD8C424123B12005E806D /* RealmDatabaseLoader.swift in Sources */,
 				5F0FD8B224111EB7005E806D /* KeyboardViewController+Setup.swift in Sources */,
 				5F0FD8A824111EB7005E806D /* DemoAutocompleteLabel.swift in Sources */,
 				5F0FD8AB24111EB7005E806D /* SymbolicKeyboard.swift in Sources */,
@@ -815,6 +845,16 @@
 			productName = Realm;
 		};
 		5F0FD8B824122779005E806D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F0FD8B524122779005E806D /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		5F0FD8C7241245BD005E806D /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F0FD8B524122779005E806D /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		5F0FD8C9241245BD005E806D /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5F0FD8B524122779005E806D /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = RealmSwift;

@@ -26,6 +26,7 @@ extension KeyboardViewController {
 private extension KeyboardViewController {
     
     func handleAutocompleteSuggestionsResult(_ result: AutocompleteResult) {
+        autocompleteToolbar.enableScrolling()
         switch result {
         case .failure(let error): print(error.localizedDescription)
         case .success(let result): autocompleteToolbar.update(with: result)
