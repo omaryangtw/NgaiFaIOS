@@ -98,6 +98,10 @@
 		5F0FD8C8241245BD005E806D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0FD8C7241245BD005E806D /* Realm */; };
 		5F0FD8CA241245BD005E806D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0FD8C9241245BD005E806D /* RealmSwift */; };
 		5F0FD8D024132E28005E806D /* ime_dict_8.realm in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD8CF24132E28005E806D /* ime_dict_8.realm */; };
+		5F56F2B42415065A00BE2D92 /* AlphabeticKeyboardAlt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56F2B32415065A00BE2D92 /* AlphabeticKeyboardAlt.swift */; };
+		5F56F2BA2415290900BE2D92 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56F2B62415290800BE2D92 /* SettingsCell.swift */; };
+		5F56F2BB2415290900BE2D92 /* UserInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56F2B72415290800BE2D92 /* UserInfoHeader.swift */; };
+		5F56F2BC2415290900BE2D92 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56F2B92415290900BE2D92 /* SettingsSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +188,10 @@
 		5F0FD8C324123B12005E806D /* RealmDatabaseLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatabaseLoader.swift; sourceTree = "<group>"; };
 		5F0FD8C524123BA1005E806D /* ImeDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImeDict.swift; sourceTree = "<group>"; };
 		5F0FD8CF24132E28005E806D /* ime_dict_8.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ime_dict_8.realm; sourceTree = "<group>"; };
+		5F56F2B32415065A00BE2D92 /* AlphabeticKeyboardAlt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabeticKeyboardAlt.swift; sourceTree = "<group>"; };
+		5F56F2B62415290800BE2D92 /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		5F56F2B72415290800BE2D92 /* UserInfoHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
+		5F56F2B92415290900BE2D92 /* SettingsSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +240,8 @@
 		5F0FD7F124111866005E806D /* Ngaifa */ = {
 			isa = PBXGroup;
 			children = (
+				5F56F2B82415290900BE2D92 /* Model */,
+				5F56F2B52415290800BE2D92 /* View */,
 				5F0FD819241119C8005E806D /* Assets */,
 				5F0FD7F224111866005E806D /* AppDelegate.swift */,
 				5F0FD7F424111866005E806D /* SceneDelegate.swift */,
@@ -332,6 +342,7 @@
 				5F0FD89C24111EB6005E806D /* ImageKeyboard.swift */,
 				5F0FD89D24111EB6005E806D /* DemoKeyboard.swift */,
 				5F0FD89E24111EB6005E806D /* EmojiKeyboard.swift */,
+				5F56F2B32415065A00BE2D92 /* AlphabeticKeyboardAlt.swift */,
 			);
 			path = Keyboards;
 			sourceTree = "<group>";
@@ -353,6 +364,23 @@
 				5F0FD8C524123BA1005E806D /* ImeDict.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		5F56F2B52415290800BE2D92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F56F2B62415290800BE2D92 /* SettingsCell.swift */,
+				5F56F2B72415290800BE2D92 /* UserInfoHeader.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F56F2B82415290900BE2D92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F56F2B92415290900BE2D92 /* SettingsSection.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -528,10 +556,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F56F2BC2415290900BE2D92 /* SettingsSection.swift in Sources */,
 				5F0FD7F724111866005E806D /* ViewController.swift in Sources */,
+				5F56F2BB2415290900BE2D92 /* UserInfoHeader.swift in Sources */,
 				5F0FD7F324111866005E806D /* AppDelegate.swift in Sources */,
 				5F0FD838241119C8005E806D /* Assets.swift in Sources */,
 				5F0FD7F524111866005E806D /* SceneDelegate.swift in Sources */,
+				5F56F2BA2415290900BE2D92 /* SettingsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +571,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F0FD8C224123972005E806D /* containsNumbers.swift in Sources */,
+				5F56F2B42415065A00BE2D92 /* AlphabeticKeyboardAlt.swift in Sources */,
 				5F0FD8AF24111EB7005E806D /* DemoKeyboardActionHandler.swift in Sources */,
 				5F0FD8C624123BA1005E806D /* ImeDict.swift in Sources */,
 				5F0FD8B424111EB7005E806D /* KeyboardViewController.swift in Sources */,
