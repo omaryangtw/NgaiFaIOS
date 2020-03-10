@@ -16,10 +16,10 @@ class DemoAutocompleteSuggestionProvider: AutocompleteSuggestionProvider {
 
     func autocompleteSuggestions(for text: String, completion: AutocompleteResponse) {
         guard text.count > 0 else { return completion(.success([])) }
-        let suffixes = ["ly", "er", "ter"]
-        let suggestions = suffixes.map { text + $0 }
-        //let ins = CandidateLookup()
-        //let suggestions = ins.candidateLookup(input: text)
+        //let suffixes = ["ly", "er", "ter"]
+        //let suggestions = suffixes.map { text + $0 }
+        let ins = CandidateLookup()
+        let suggestions = ins.candidateLookup(input: text)
         completion(.success(suggestions))
     }
     
