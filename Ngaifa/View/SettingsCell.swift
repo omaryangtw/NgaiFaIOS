@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeyboardKit
 
 class SettingsCell: UITableViewCell {
     
@@ -23,6 +24,9 @@ class SettingsCell: UITableViewCell {
     lazy var switchControl: UISwitch = {
         let switchControl = UISwitch()
         switchControl.isOn = true
+        userDefaults!.set(true, forKey: "POJ")
+        userDefaults!.set(true, forKey: "Hant")
+        userDefaults!.set(true, forKey: "Haptic")
         switchControl.onTintColor = UIColor(red: 55/255, green: 120/255, blue: 250/255, alpha: 1)
         switchControl.translatesAutoresizingMaskIntoConstraints = false
         switchControl.addTarget(self, action: #selector(handleSwitchAction), for: .valueChanged)
@@ -47,9 +51,21 @@ class SettingsCell: UITableViewCell {
     
     @objc func handleSwitchAction(sender: UISwitch) {
         if sender.isOn {
-            print("Turned on")
+            print("Button \(sender.tag) Turned on")
+            switch sender.tag {
+            case 0:userDefaults!.set(true, forKey: "POJ")
+            case 1:userDefaults!.set(true, forKey: "Hant")
+            case 2:userDefaults!.set(true, forKey: "Haptic")
+            default:break
+            }
         } else {
-            print("Turned off")
+            print("Button \(sender.tag) Turned off")
+            switch sender.tag {
+            case 0:userDefaults!.set(false, forKey: "POJ")
+            case 1:userDefaults!.set(false, forKey: "Hant")
+            case 2:userDefaults!.set(false, forKey: "Haptic")
+            default:break
+            }
         }
     }
     

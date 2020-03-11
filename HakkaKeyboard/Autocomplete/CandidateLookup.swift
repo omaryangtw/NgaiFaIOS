@@ -21,7 +21,15 @@ class CandidateLookup{
         let suggestions = query(input: input)
         var candidates:[String] = Array<String>()
         for i in suggestions.indices{
+            if( userDefaults!.bool(forKey: "Hant")==true){
             candidates.append(suggestions[i].hanji)
+            }else{
+                if( userDefaults!.bool(forKey: "POJ") == true){
+                    candidates.append(suggestions[i].poj)
+                }else{
+                    candidates.append(suggestions[i].tailo)
+                }
+            }
         }
 
         return candidates
@@ -36,10 +44,18 @@ class CandidateLookup{
         let inputFix = input.replacingOccurrences(of: "1", with: "")
         let predicate: NSPredicate?
         if inputFix.containsNumbers(){
-            predicate = NSPredicate(format: "pojInputWithNumberTone BEGINSWITH[c] %@", inputFix)
+            if( userDefaults!.bool(forKey: "POJ") == true){
+                predicate = NSPredicate(format: "pojInputWithNumberTone BEGINSWITH[c] %@", inputFix)
+            }else{
+                predicate = NSPredicate(format: "tailoInputWithNumberTone BEGINSWITH[c] %@", inputFix)
+            }
 
         } else {
+            if( userDefaults!.bool(forKey: "POJ") == true){
             predicate = NSPredicate(format: "pojInputWithoutTone BEGINSWITH[c] %@ OR pojShortInput BEGINSWITH[c] %@", inputFix, inputFix)
+            }else{
+            predicate = NSPredicate(format: "tailoInputWithNumberTone BEGINSWITH[c] %@", inputFix)
+            }
 
         }
         

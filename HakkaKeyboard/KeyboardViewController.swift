@@ -70,6 +70,7 @@ class KeyboardViewController: KeyboardInputViewController {
     override func textDidChange(_ textInput: UITextInput?) {
         super.textDidChange(textInput)
         requestAutocompleteSuggestions()
+        print(userDefaults!.bool(forKey: "POJ"))
     }
     
     override func selectionWillChange(_ textInput: UITextInput?) {

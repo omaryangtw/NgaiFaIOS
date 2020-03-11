@@ -98,6 +98,8 @@
 		5F0FD8C8241245BD005E806D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0FD8C7241245BD005E806D /* Realm */; };
 		5F0FD8CA241245BD005E806D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0FD8C9241245BD005E806D /* RealmSwift */; };
 		5F0FD8D024132E28005E806D /* ime_dict_8.realm in Resources */ = {isa = PBXBuildFile; fileRef = 5F0FD8CF24132E28005E806D /* ime_dict_8.realm */; };
+		5F1784A824186A7B00C4F0CC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1784A624186A7B00C4F0CC /* Settings.swift */; };
+		5F1784AD24187F7E00C4F0CC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1784A624186A7B00C4F0CC /* Settings.swift */; };
 		5F56F2B42415065A00BE2D92 /* AlphabeticKeyboardAlt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56F2B32415065A00BE2D92 /* AlphabeticKeyboardAlt.swift */; };
 		5F56F2BA2415290900BE2D92 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56F2B62415290800BE2D92 /* SettingsCell.swift */; };
 		5F56F2BB2415290900BE2D92 /* UserInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56F2B72415290800BE2D92 /* UserInfoHeader.swift */; };
@@ -188,6 +190,9 @@
 		5F0FD8C324123B12005E806D /* RealmDatabaseLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDatabaseLoader.swift; sourceTree = "<group>"; };
 		5F0FD8C524123BA1005E806D /* ImeDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImeDict.swift; sourceTree = "<group>"; };
 		5F0FD8CF24132E28005E806D /* ime_dict_8.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ime_dict_8.realm; sourceTree = "<group>"; };
+		5F1784A624186A7B00C4F0CC /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		5F1784AE2418FFFF00C4F0CC /* Ngaifa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ngaifa.entitlements; sourceTree = "<group>"; };
+		5F1784AF2419000800C4F0CC /* HakkaKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HakkaKeyboard.entitlements; sourceTree = "<group>"; };
 		5F56F2B32415065A00BE2D92 /* AlphabeticKeyboardAlt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabeticKeyboardAlt.swift; sourceTree = "<group>"; };
 		5F56F2B62415290800BE2D92 /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		5F56F2B72415290800BE2D92 /* UserInfoHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
@@ -240,6 +245,7 @@
 		5F0FD7F124111866005E806D /* Ngaifa */ = {
 			isa = PBXGroup;
 			children = (
+				5F1784AE2418FFFF00C4F0CC /* Ngaifa.entitlements */,
 				5F56F2B82415290900BE2D92 /* Model */,
 				5F56F2B52415290800BE2D92 /* View */,
 				5F0FD819241119C8005E806D /* Assets */,
@@ -257,6 +263,8 @@
 		5F0FD80E241118DB005E806D /* HakkaKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				5F1784AF2419000800C4F0CC /* HakkaKeyboard.entitlements */,
+				5F1784A624186A7B00C4F0CC /* Settings.swift */,
 				5F0FD8BE24123859005E806D /* Utils */,
 				5F0FD8A324111EB6005E806D /* Autocomplete */,
 				5F0FD89424111EB6005E806D /* Buttons */,
@@ -558,6 +566,7 @@
 			files = (
 				5F56F2BC2415290900BE2D92 /* SettingsSection.swift in Sources */,
 				5F0FD7F724111866005E806D /* ViewController.swift in Sources */,
+				5F1784AD24187F7E00C4F0CC /* Settings.swift in Sources */,
 				5F56F2BB2415290900BE2D92 /* UserInfoHeader.swift in Sources */,
 				5F0FD7F324111866005E806D /* AppDelegate.swift in Sources */,
 				5F0FD838241119C8005E806D /* Assets.swift in Sources */,
@@ -588,6 +597,7 @@
 				5F0FD8A824111EB7005E806D /* DemoAutocompleteLabel.swift in Sources */,
 				5F0FD8AB24111EB7005E806D /* SymbolicKeyboard.swift in Sources */,
 				5F0FD8B124111EB7005E806D /* KeyboardViewController+Autocomplete.swift in Sources */,
+				5F1784A824186A7B00C4F0CC /* Settings.swift in Sources */,
 				5F0FD839241119C8005E806D /* Assets.swift in Sources */,
 				5F0FD8AE24111EB7005E806D /* EmojiKeyboard.swift in Sources */,
 			);
@@ -676,6 +686,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -730,6 +741,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -742,7 +754,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ngaifa/Ngaifa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B75D9YT857;
 				INFOPLIST_FILE = Ngaifa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -760,7 +774,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ngaifa/Ngaifa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B75D9YT857;
 				INFOPLIST_FILE = Ngaifa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -776,7 +792,9 @@
 		5F0FD816241118DB005E806D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HakkaKeyboard/HakkaKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B75D9YT857;
 				INFOPLIST_FILE = HakkaKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -794,7 +812,9 @@
 		5F0FD817241118DB005E806D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HakkaKeyboard/HakkaKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B75D9YT857;
 				INFOPLIST_FILE = HakkaKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

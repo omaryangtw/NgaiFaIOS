@@ -97,7 +97,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! SettingsCell
         guard let section = SettingsSection(rawValue: indexPath.section) else { return UITableViewCell() }
-
+        
         switch section {
         case .Social:
             let social = SocialOptions(rawValue: indexPath.row)
@@ -105,6 +105,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         case .Communications:
             let communications = CommunicationOptions(rawValue: indexPath.row)
             cell.sectionType = communications
+            cell.switchControl.tag=indexPath.row
         }
         
         return cell
