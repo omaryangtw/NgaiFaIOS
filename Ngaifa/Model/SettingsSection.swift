@@ -11,13 +11,13 @@ protocol SectionType: CustomStringConvertible {
 }
 
 enum SettingsSection: Int, CaseIterable, CustomStringConvertible {
-    case Social 
+    //case Social
     case Communications
     
     var description: String {
         switch self {
-        case .Social: return "Social"
-        case .Communications: return "Communications"
+        //case .Social: return "Social"
+        case .Communications: return "設定"
         }
     }
 }
@@ -39,21 +39,21 @@ enum SocialOptions: Int, CaseIterable, SectionType {
 enum CommunicationOptions: Int, CaseIterable, SectionType {
     case notifications
     case email
-    case reportCrashes
+    //case reportCrashes
     
     var containsSwitch: Bool {
         switch self {
         case .notifications: return true
         case .email: return true
-        case .reportCrashes: return true
+        //case .reportCrashes: return true
         }
     }
     
     var description: String {
         switch self {
-        case .notifications: return "Notifications"
-        case .email: return "Email"
-        case .reportCrashes: return "Report Crashes"
+        case .notifications: return "使用白話字（關閉則使用教育部羅馬字）"
+        case .email: return "使用漢字（關閉則使用羅馬字）"
+        //case .reportCrashes: return "開啟震動"
         }
     }
 }

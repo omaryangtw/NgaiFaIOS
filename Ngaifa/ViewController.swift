@@ -67,7 +67,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         guard let section = SettingsSection(rawValue: section) else { return 0 }
         
         switch section {
-        case .Social: return SocialOptions.allCases.count
+        //case .Social: return SocialOptions.allCases.count
         case .Communications: return CommunicationOptions.allCases.count
         }
     }
@@ -99,9 +99,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         guard let section = SettingsSection(rawValue: indexPath.section) else { return UITableViewCell() }
         
         switch section {
+            /*
         case .Social:
             let social = SocialOptions(rawValue: indexPath.row)
-            cell.sectionType = social
+            cell.sectionType = social */
         case .Communications:
             let communications = CommunicationOptions(rawValue: indexPath.row)
             cell.sectionType = communications
@@ -115,8 +116,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         guard let section = SettingsSection(rawValue: indexPath.section) else { return }
         
         switch section {
+            /*
         case .Social:
             print(SocialOptions(rawValue: indexPath.row)?.description)
+ */
         case .Communications:
             print(CommunicationOptions(rawValue: indexPath.row)?.description)
         }

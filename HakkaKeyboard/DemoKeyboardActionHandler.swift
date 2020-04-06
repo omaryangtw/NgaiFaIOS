@@ -24,7 +24,7 @@ class DemoKeyboardActionHandler: StandardKeyboardActionHandler {
         keyboardShiftState = .lowercased
         super.init(
             inputViewController: inputViewController,
-            hapticConfiguration: .standard
+            hapticConfiguration: .noFeedback
         )
     }
     
