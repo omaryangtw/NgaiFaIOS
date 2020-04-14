@@ -31,7 +31,7 @@ class CandidateLookup{
                 }
             }
         }
-
+        candidates = Array(Set(candidates))
         return candidates
     }
 
@@ -41,7 +41,7 @@ class CandidateLookup{
     
     fileprivate func query(input:String)->[ImeDict]{
         
-        let inputFix = input.replacingOccurrences(of: "1", with: "")
+        let inputFix = input
         let predicate: NSPredicate?
         if inputFix.containsNumbers(){
             if( userDefaults!.bool(forKey: "POJ") == true){

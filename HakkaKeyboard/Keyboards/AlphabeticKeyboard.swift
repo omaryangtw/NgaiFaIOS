@@ -34,6 +34,7 @@ private extension AlphabeticKeyboard {
     }
     
     static let characters: [[String]] = [
+        ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"],
         ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"],
         ["a", "s", "d", "f", "g", "h", "j", "k", "l"],
         ["z", "x", "c", "v", "b", "n", "m"]
@@ -52,10 +53,10 @@ private extension Sequence where Iterator.Element == KeyboardActionRow {
     
     func addingSideActions(uppercased: Bool) -> [Iterator.Element] {
         var result = map { $0 }
-        result[2].insert(uppercased ? .shiftDown : .shift, at: 0)
-        result[2].insert(.none, at: 1)
-        result[2].append(.none)
-        result[2].append(.backspace)
+        result[3].insert(uppercased ? .shiftDown : .shift, at: 0)
+        result[3].insert(.none, at: 1)
+        result[3].append(.none)
+        result[3].append(.backspace)
         return result
     }
 }
