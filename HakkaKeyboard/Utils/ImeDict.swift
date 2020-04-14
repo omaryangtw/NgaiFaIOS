@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class ImeDict: Object {
+class ImeDict8: Object {
     
     @objc dynamic var wordId = 0
     @objc dynamic var mainCode = 0
@@ -45,8 +45,8 @@ class ImeDict: Object {
         ]
     }
     
-    func detached() -> ImeDict {
-        let detached = ImeDict()
+    func detached() -> ImeDict8 {
+        let detached = ImeDict8()
         
         detached.wordId = self.wordId
         detached.mainCode = self.mainCode

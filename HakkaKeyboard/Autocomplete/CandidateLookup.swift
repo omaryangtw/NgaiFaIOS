@@ -39,7 +39,7 @@ class CandidateLookup{
         return input
     }
     
-    fileprivate func query(input:String)->[ImeDict]{
+    fileprivate func query(input:String)->[ImeDict8]{
         
         let inputFix = input
         let predicate: NSPredicate?
@@ -59,8 +59,8 @@ class CandidateLookup{
 
         }
         
-        let realmResults = RealmDatabaseLoader.getBundledRealm().objects(ImeDict.self).filter(predicate!).sorted(byKeyPath: "lomajiCharLength", ascending: true)
-        var unmanagedResults = [ImeDict]()
+        let realmResults = RealmDatabaseLoader.getBundledRealm().objects(ImeDict8.self).filter(predicate!).sorted(byKeyPath: "lomajiCharLength", ascending: true)
+        var unmanagedResults = [ImeDict8]()
         
         for result in realmResults{
             unmanagedResults.append(result.detached())
@@ -71,14 +71,14 @@ class CandidateLookup{
 
     }
     
-    fileprivate func checkShiftedInput(_ input: String, _ results: [ImeDict]) -> [ImeDict] {
+    fileprivate func checkShiftedInput(_ input: String, _ results: [ImeDict8]) -> [ImeDict8] {
         // handle caps with shiftStatus
         let firstCharString = input.prefix(1)
         if firstCharString.uppercased() != firstCharString {
             return results
         }
         
-        for result: ImeDict in results {
+        for result: ImeDict8 in results {
             if input.uppercased() == input {
                     result.poj = result.poj.uppercased()
                 continue
