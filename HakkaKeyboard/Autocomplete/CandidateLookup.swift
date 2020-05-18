@@ -59,7 +59,7 @@ class CandidateLookup{
 
         }
         
-        let realmResults = RealmDatabaseLoader.getBundledRealm().objects(ImeDict8.self).filter(predicate!).sorted(byKeyPath: "lomajiCharLength", ascending: true)
+        let realmResults = RealmDatabaseLoader.getBundledRealm().objects(ImeDict8.self).filter(predicate!).sorted(byKeyPath: "wordLength", ascending: true)
         var unmanagedResults = [ImeDict8]()
         
         for result in realmResults{
