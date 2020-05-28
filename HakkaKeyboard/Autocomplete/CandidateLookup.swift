@@ -32,6 +32,9 @@ class CandidateLookup{
             }
         }
         candidates = Array(Set(candidates))
+        candidates=candidates.sorted { (a, b) -> Bool in
+            return a.count < b.count
+        }
         return candidates
     }
 

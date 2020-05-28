@@ -104,6 +104,8 @@
 		5F56F2BA2415290900BE2D92 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56F2B62415290800BE2D92 /* SettingsCell.swift */; };
 		5F56F2BB2415290900BE2D92 /* UserInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56F2B72415290800BE2D92 /* UserInfoHeader.swift */; };
 		5F56F2BC2415290900BE2D92 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F56F2B92415290900BE2D92 /* SettingsSection.swift */; };
+		5FB8C42F247F4E57008CAE26 /* jf-openhuninn-1.0.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB8C42E247F4E57008CAE26 /* jf-openhuninn-1.0.otf */; };
+		5FB8C430247F4E57008CAE26 /* jf-openhuninn-1.0.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB8C42E247F4E57008CAE26 /* jf-openhuninn-1.0.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +199,9 @@
 		5F56F2B62415290800BE2D92 /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		5F56F2B72415290800BE2D92 /* UserInfoHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
 		5F56F2B92415290900BE2D92 /* SettingsSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
+		5FB8C42E247F4E57008CAE26 /* jf-openhuninn-1.0.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "jf-openhuninn-1.0.otf"; sourceTree = "<group>"; };
+		5FB8C431247F54E0008CAE26 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		5FB8C432247F54E2008CAE26 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				5F0FD8CF24132E28005E806D /* ime_dict_8.realm */,
+				5FB8C42E247F4E57008CAE26 /* jf-openhuninn-1.0.otf */,
 				5F0FD81A241119C8005E806D /* Assets.swift */,
 				5F0FD81B241119C8005E806D /* Colors.xcassets */,
 				5F0FD81C241119C8005E806D /* Images.xcassets */,
@@ -465,6 +471,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 5F0FD7E624111866005E806D;
 			packageReferences = (
@@ -493,6 +500,7 @@
 				5F0FD84A241119C9005E806D /* mail.png in Resources */,
 				5F0FD852241119C9005E806D /* cancel.png in Resources */,
 				5F0FD844241119C8005E806D /* delicious.png in Resources */,
+				5FB8C42F247F4E57008CAE26 /* jf-openhuninn-1.0.otf in Resources */,
 				5F0FD864241119C9005E806D /* idea.png in Resources */,
 				5F0FD868241119C9005E806D /* trash.png in Resources */,
 				5F0FD854241119C9005E806D /* mac.png in Resources */,
@@ -550,6 +558,7 @@
 				5F0FD847241119C8005E806D /* note.png in Resources */,
 				5F0FD84F241119C9005E806D /* bubble.png in Resources */,
 				5F0FD86B241119C9005E806D /* box.png in Resources */,
+				5FB8C430247F4E57008CAE26 /* jf-openhuninn-1.0.otf in Resources */,
 				5F0FD86D241119C9005E806D /* favorite.png in Resources */,
 				5F0FD863241119C9005E806D /* video.png in Resources */,
 				5F0FD86F241119C9005E806D /* refresh.png in Resources */,
@@ -618,6 +627,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5F0FD7F924111866005E806D /* Base */,
+				5FB8C431247F54E0008CAE26 /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -626,6 +636,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5F0FD7FE24111867005E806D /* Base */,
+				5FB8C432247F54E2008CAE26 /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -637,6 +648,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -698,6 +710,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -58,7 +58,7 @@ private extension KeyboardAction {
     }
     
     var buttonFont: UIFont {
-        return .preferredFont(forTextStyle: buttonFontStyle)
+        return UIFont(name: "jf-openhuninn-1.0", size: 20)!
     }
     
     var buttonFontStyle: UIFont.TextStyle {

@@ -79,7 +79,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         print("Section is \(section)")
         
         let title = UILabel()
-        title.font = UIFont.boldSystemFont(ofSize: 16)
+        title.font = UIFont(name: "jf-openhuninn-1.0", size: 18)
         title.textColor = .white
         title.text = SettingsSection(rawValue: section)?.description
         view.addSubview(title)

@@ -14,6 +14,7 @@ class DemoAutocompleteLabel: UILabel {
     convenience init(word: String, proxy: UITextDocumentProxy) {
         self.init(frame: .zero)
         self.proxy = proxy
+        self.font = UIFont(name: "jf-openhuninn-1.0", size: 16)
         text = word
         textAlignment = .center
         accessibilityTraits = .button

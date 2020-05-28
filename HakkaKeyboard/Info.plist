@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<string>zh_TW</string>
 	<key>CFBundleDisplayName</key>
-	<string>HakkaKeyboard</string>
+	<string>涯話</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -29,7 +29,7 @@
 			<key>PrefersRightToLeft</key>
 			<false/>
 			<key>PrimaryLanguage</key>
-			<string>en-US</string>
+			<string>zh_TW</string>
 			<key>RequestsOpenAccess</key>
 			<true/>
 		</dict>
@@ -38,5 +38,9 @@
 		<key>NSExtensionPrincipalClass</key>
 		<string>$(PRODUCT_MODULE_NAME).KeyboardViewController</string>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>jf-openhuninn-1.0.otf</string>
+	</array>
 </dict>
 </plist>

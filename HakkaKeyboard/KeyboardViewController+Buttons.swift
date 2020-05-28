@@ -1,11 +1,3 @@
-//
-//  KeyboardViewController+Buttons.swift
-//  KeyboardKitDemoKeyboard
-//
-//  Created by Daniel Saidi on 2019-10-15.
-//  Copyright © 2018 Daniel Saidi. All rights reserved.
-//
-
 import KeyboardKit
 import UIKit
 

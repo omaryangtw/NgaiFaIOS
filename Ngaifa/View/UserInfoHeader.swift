@@ -24,20 +24,11 @@ class UserInfoHeader: UIView {
     let usernameLabel: UILabel = {
         let label = UILabel()
         label.text = "涯話客語輸入法"
-        label.font = UIFont.systemFont(ofSize: 28)
+        label.font = UIFont(name: "jf-openhuninn-1.0", size: 28)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    /*
-    let emailLabel: UILabel = {
-        let label = UILabel()
-        label.text = "tony.stark@gmail.com"
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.textColor = .lightGray
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()*/
-    
+
     // MARK: - Init
     
     override init(frame: CGRect) {
