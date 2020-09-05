@@ -25,9 +25,9 @@ class CandidateLookup{
             candidates.append(suggestions[i].hanji)
             }else{
                 if( userDefaults!.bool(forKey: "POJ") == true){
-                    candidates.append(suggestions[i].poj)
+                    candidates.append(suggestions[i].poj + " ")
                 }else{
-                    candidates.append(suggestions[i].tailo)
+                    candidates.append(suggestions[i].tailo + " ")
                 }
             }
         }

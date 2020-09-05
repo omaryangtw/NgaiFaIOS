@@ -38,17 +38,18 @@ private extension KeyboardViewController {
     func width() -> Int {
         let word = textDocumentProxy.currentWord ?? ""
         let ins = CandidateLookup()
-        var mul:Double = 1.0
-        switch word.count {
-        case 1:mul = 0.8
-        case 2:mul = 0.9
-        case 3:mul = 1.5
-        case 4:mul = 1.6
-        default:
-            mul = 1.8
+        var mul:Int = 0
+        if(userDefaults!.bool(forKey: "Hant")==false){
+            mul = 15
+        }else{
+            mul = 50
         }
         
-        
-        return ins.candidateLookup(input: word).count*Int((60*mul))
+        var len = 0
+        let can = ins.candidateLookup(input: word)
+        can.forEach{ (str) in
+            len += str.count
+        }
+        return len * mul
     }
 }
